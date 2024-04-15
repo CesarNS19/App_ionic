@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <table border="1">
+      <tr>
+          <td>ID</td>
+          <td>Nombre</td>
+          <td>Descripción</td>
+          <td>Precio</td>
+          <td>Acciones</td>
+      </tr>
+      <tr *ngFor="let producto of productos">
+          <td>{{producto.id_producto}}</td>
+          <td>{{producto.nombre}}</td>
+          <td>{{producto.descripcion}}</td>
+          <td>{{producto.precio}}</td>
+          <td class="buttons">
+             <button class="Eliminar" (click)="EliminarProducto(producto.id_producto);">Eliminar</button>
+             <button class="Editar" (click)="EditarProducto(producto.id_producto);">Editar</button>
+          </td>
+      </tr>
+  </table>
+  </ion-list>
+</ion-content>
