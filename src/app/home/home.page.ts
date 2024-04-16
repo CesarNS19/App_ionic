@@ -13,4 +13,8 @@ export class HomePage {
   goToProductsPage() {
     this.router.navigateByUrl('/productos'); 
   }
+  
+  goToLoginPage() {
+    this.router.navigateByUrl('/login'); 
+  }
 }

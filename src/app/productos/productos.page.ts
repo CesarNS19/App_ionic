@@ -16,7 +16,7 @@ productos:any ;
   txtca !:string ;
   txtgr !:number ;
   constructor(public http:HttpClient){
-    this.ip='192.168.2.129';
+    this.ip='192.168.1.95';
     this.nuevo=true;
     this.listaproductos();
     
