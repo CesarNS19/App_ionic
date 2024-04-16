@@ -8,15 +8,15 @@ import { Producto } from './model/Producto';
   styleUrls: ['./productos.page.scss'],
 })
 export class ProductosPage implements OnInit {
-ip!: string;
-nuevo!: boolean;
-productos:any ;
+  ip!: string;
+  nuevo!: boolean;
+  productos:any ;
   txtma !:number ;
   txtnm !:string ;
   txtca !:string ;
   txtgr !:number ;
   constructor(public http:HttpClient){
-    this.ip='192.168.2.129';
+    this.ip='192.168.1.76';
     this.nuevo=true;
     this.listaproductos();
     
