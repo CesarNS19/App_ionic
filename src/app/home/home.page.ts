@@ -9,10 +9,6 @@ import { Router } from '@angular/router'; // Importa Router
 export class HomePage {
 
   constructor(private router: Router) {}
-
-  goToProductsPage() {
-    this.router.navigateByUrl('/productos'); 
-  }
   
   goToLoginPage() {
     this.router.navigateByUrl('/login'); 

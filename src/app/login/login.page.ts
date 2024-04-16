@@ -11,7 +11,7 @@ export class LoginPage implements OnInit {
 
   email: string = '';
   password: string = '';
-  ip: string = "192.168.1.95";
+  ip: string = "192.168.1.76";
   
   constructor(private http: HttpClient, private router: Router) { }
 
@@ -35,14 +35,12 @@ export class LoginPage implements OnInit {
            
             this.router.navigateByUrl('/productos');
         } else if( rol === 'usuario') {
-         //dashboard usuario
             console.log('El usuario no es un administrador.');
             this.router.navigateByUrl('/dashboard-usuario');
         }
       },
       (error) => {
         console.log(error);
-        // Manejar el error aquí
       }
     );
   }

@@ -15,7 +15,7 @@ export class SignPage implements OnInit {
   apellido !:string;
   email !:string;
   password! :string;
-  ip: string = "192.168.1.95";
+  ip: string = "192.168.74.40";
   constructor(private http: HttpClient, private router: Router) { }
   login(){
     this.router.navigateByUrl('/login');
