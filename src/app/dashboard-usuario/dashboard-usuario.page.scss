@@ -1,0 +1,16 @@
+ion-menu {
+    --ion-background-color: #333; /* Color de fondo del menú */
+  }
+  
+  ion-list {
+    margin-top: 20px;
+  }
+  
+  ion-item {
+    --color: #ffffff; /* Color del texto */
+  }
+  
+  ion-item:hover {
+    --background: #35343482; /* Color de fondo al pasar el ratón */
+  }
+  

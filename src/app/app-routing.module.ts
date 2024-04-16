@@ -15,6 +15,35 @@ const routes: Routes = [
     path: 'productos',
     loadChildren: () => import('./productos/productos.module').then( m => m.ProductosPageModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'sign',
+    loadChildren: () => import('./sign/sign.module').then( m => m.SignPageModule)
+  },
+  {
+    path: 'dashboard-usuario',
+    loadChildren: () => import('./dashboard-usuario/dashboard-usuario.module').then( m => m.DashboardUsuarioPageModule)
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
+  },
+  {
+    path: 'edit-profile',
+    loadChildren: () => import('./edit-profile/edit-profile.module').then( m => m.EditProfilePageModule)
+  },  {
+    path: 'menu-admin',
+    loadChildren: () => import('./menu-admin/menu-admin.module').then( m => m.MenuAdminPageModule)
+  },
+  {
+    path: 'addproducto',
+    loadChildren: () => import('./addproducto/addproducto.module').then( m => m.AddproductoPageModule)
+  },
+
+
 ];
 
 @NgModule({
