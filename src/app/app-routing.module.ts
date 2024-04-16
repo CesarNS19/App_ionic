@@ -44,6 +44,14 @@ const routes: Routes = [
     path: 'addproducto',
     loadChildren: () => import('./addproducto/addproducto.module').then( m => m.AddproductoPageModule)
   },
+  {
+    path: 'menu-admin',
+    loadChildren: () => import('./menu-admin/menu-admin.module').then( m => m.MenuAdminPageModule)
+  },
+  {
+    path: 'addproducto',
+    loadChildren: () => import('./addproducto/addproducto.module').then( m => m.AddproductoPageModule)
+  },
 
 
 ];
