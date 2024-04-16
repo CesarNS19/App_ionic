@@ -12,11 +12,9 @@ export class DashboardUsuarioPage implements OnInit {
 
   ngOnInit() {
   }
-  goToProfile(){
-    this.router.navigateByUrl('/edit-profile');
-  }
+ 
   goToAbout(){
-
+    console.log("Welcome");
   }
   Logout(){
     this.router.navigateByUrl('/login');

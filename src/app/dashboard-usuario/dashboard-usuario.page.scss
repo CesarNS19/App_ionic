@@ -13,4 +13,7 @@ ion-menu {
   ion-item:hover {
     --background: #35343482; /* Color de fondo al pasar el ratón */
   }
-  
+  .main-content{
+    position: relative;
+    z-index: 1;
+  }
