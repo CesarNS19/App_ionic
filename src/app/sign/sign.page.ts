@@ -24,7 +24,7 @@ export class SignPage implements OnInit {
   }
   AgregarUsuario(){
     let user = new Usuario(this.nombre, this.apellido, this.email, this.password);
-    this.http.post("http://"+this.ip+"/servicios/adduser.php", user).subscribe(
+    this.http.post("http://"+this.ip+"/servicios/usuarios/adduser.php", user).subscribe(
 
     (res) => {
       console.log(res);

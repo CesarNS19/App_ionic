@@ -18,7 +18,7 @@ export class LoginPage implements OnInit {
   ngOnInit() {}
 
   ValidarDato() {
-    const url = `http://${this.ip}/servicios/validar_datos.php`;
+    const url = `http://${this.ip}/servicios/usuarios/validar_datos.php`;
     const data = {
       email: this.email,
       password: this.password

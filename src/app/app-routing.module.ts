@@ -26,6 +26,14 @@ const routes: Routes = [
     path: 'dashboard-usuario',
     loadChildren: () => import('./dashboard-usuario/dashboard-usuario.module').then( m => m.DashboardUsuarioPageModule)
   },
+  {
+    path: 'menu',
+    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
+  },
+  {
+    path: 'edit-profile',
+    loadChildren: () => import('./edit-profile/edit-profile.module').then( m => m.EditProfilePageModule)
+  },
 
 ];
 
